@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project X Squared</title>
+</head>
+<body>
+
+<script>
+function areaPer(){
+  var w = document.getElementById("width").value;
+  var l = document.getElementById("length").value;
+  
+  var area = w * l;
+  var perimeter = w + w + l + l;
+  
+  var result = "Area: " + area + "m^2  Perimeter: " + perimeter + " m";
+  
+  document.getElementById("output").innerHTML = result; 
+}
+</script>
+
+<h1>Enter width and height</h1>
+<h2>Width: <input type ="number" id ="width"></h2>
+<h2>Height: <input type ="number" id ="length"></h2>
+<button onclick="areaPer()">Find Area and Perimeter</button>
+
+<p id="output"></p>
+</body>
+</html> 
